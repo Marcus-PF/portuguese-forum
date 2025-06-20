@@ -1,0 +1,44 @@
+{
+  "name": "@ptforum/forum",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/forum",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "options": {
+        "outputPath": "dist/apps/forum",
+        "root": "apps/forum",
+        "config": "apps/forum/next.config.js",
+        "buildTarget": "forum:build"
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "outputHashing": "all"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "options": {
+        "root": "apps/forum",
+        "port": 3001
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "options": {
+        "lintFilePatterns": ["apps/forum/**/*.ts", "apps/forum/**/*.tsx"]
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "options": {
+        "root": "apps/forum",
+        "testTimeout": 30000
+      }
+    }
+  }
+}

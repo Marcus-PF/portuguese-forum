@@ -1,0 +1,35 @@
+/* apps/forum/src/app/global.css */
+@import "tailwindcss";
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #8b5cf6, #ec4899, #ef4444); /* purple -> pink -> red */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb; /* blue-600 */
+}
+
+.debug-box {
+  background-color: #16a34a; /* green-600 */
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  margin-top: 2rem;
+}

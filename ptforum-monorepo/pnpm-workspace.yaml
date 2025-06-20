@@ -1,2 +1,14 @@
+packages:
+  - apps/*
+  - libs/*
 onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - '@swc/core'
+  - '@tailwindcss/oxide'
+  - core-js
+  - core-js-pure
+  - cypress
+  - esbuild
   - nx
+  - sharp
+  - unrs-resolver
