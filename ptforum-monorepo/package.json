@@ -1,0 +1,14 @@
+{
+  "name": "@ptforum/source",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "@nx/js": "21.2.1",
+    "nx": "21.2.1",
+    "tslib": "^2.3.0",
+    "typescript": "~5.8.2"
+  }
+}
