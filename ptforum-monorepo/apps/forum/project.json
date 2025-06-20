@@ -1,9 +1,10 @@
 {
   "name": "@ptforum/forum",
+  "version": "0.0.1",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/forum",
   "projectType": "application",
-  "tags": [],
+  "tags": ["type:app", "scope:website"],
   "targets": {
     "build": {
       "executor": "@nx/next:build",

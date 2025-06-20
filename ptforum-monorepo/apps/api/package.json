@@ -1,0 +1,10 @@
+{
+  "name": "@ptforum/api",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "hono": "^4.8.1",
+    "@hono/node-server": "^1.14.4"
+  }
+}
