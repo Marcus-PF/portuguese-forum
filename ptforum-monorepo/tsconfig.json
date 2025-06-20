@@ -1,13 +1,9 @@
 {
   "extends": "./tsconfig.base.json",
-  "compileOnSave": false,
   "files": [],
   "references": [
-    {
-      "path": "./apps/forum-e2e"
-    },
-    {
-      "path": "./apps/forum"
-    }
+    { "path": "apps/forum" },
+    { "path": "apps/forum-e2e" },
+    { "path": "libs/shared/types" }
   ]
 }
