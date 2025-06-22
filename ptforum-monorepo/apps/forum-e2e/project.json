@@ -1,8 +1,0 @@
-{
-  "name": "@ptforum/forum-e2e",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/forum-e2e",
-  "projectType": "application",
-  "tags": [],
-  "targets": {}
-}

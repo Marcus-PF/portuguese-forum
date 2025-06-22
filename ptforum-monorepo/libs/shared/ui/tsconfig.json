@@ -1,0 +1,17 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "src",
+    "outDir": "../../../dist/out-tsc/libs/shared/ui",
+    "tsBuildInfoFile": "../../../dist/out-tsc/libs/shared/ui/tsconfig.tsbuildinfo",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["**/*.spec.ts", "**/*.test.ts", "**/*.js"],
+  "references": [
+    { "path": "../utils" }
+  ]
+}

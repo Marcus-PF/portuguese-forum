@@ -11,8 +11,7 @@
       "options": {
         "outputPath": "dist/apps/forum",
         "root": "apps/forum",
-        "config": "apps/forum/next.config.js",
-        "buildTarget": "forum:build"
+        "config": "apps/forum/next.config.js"
       },
       "configurations": {
         "production": {

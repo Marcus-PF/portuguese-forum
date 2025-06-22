@@ -3,6 +3,12 @@
   "references": [
     {
       "path": "../../libs/shared/types"
+    },
+    {
+      "path": "../../libs/shared/utils"
+    },
+    {
+      "path": "../../libs/shared/ui"
     }
   ],
   "compilerOptions": {
@@ -10,12 +16,14 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "noEmit": true,
+    "verbatimModuleSyntax": true,
     "resolveJsonModule": true,
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "incremental": true,
+    "types": ["node"],
     "plugins": [
       {
         "name": "next"
@@ -23,12 +31,13 @@
     ]
   },
   "include": [
+    ".next/types/**/*.ts",
     "next-env.d.ts",
     "src/**/*.js",
     "src/**/*.jsx",
     "src/**/*.ts",
     "src/**/*.tsx",
-    ".next/types/**/*.ts"
+    "../../dist/apps/forum/.next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules",

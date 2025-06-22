@@ -1,5 +1,5 @@
 {
-  "name": "shared-types",
+  "name": "@ptforum/types",
   "root": "libs/shared/types",
   "sourceRoot": "libs/shared/types/src",
   "projectType": "library",
@@ -13,7 +13,6 @@
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["coverage/libs/shared/types"],
       "options": {
         "passWithNoTests": true
       }

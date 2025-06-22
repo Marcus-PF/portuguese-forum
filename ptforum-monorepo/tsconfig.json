@@ -3,16 +3,13 @@
   "files": [],
   "references": [
     {
-      "path": "apps/forum"
-    },
-    {
-      "path": "apps/forum-e2e"
-    },
-    {
-      "path": "libs/shared/types"
+      "path": "./apps/forum"
     },
     {
       "path": "./apps/api"
-    }
+    },
+    { "path": "./libs/shared/types" },
+    { "path": "./libs/shared/utils" },
+    { "path": "./libs/shared/ui" },
   ]
 }

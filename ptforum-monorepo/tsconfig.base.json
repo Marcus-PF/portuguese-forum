@@ -4,6 +4,12 @@
     "paths": {
       "@ptforum/shared/types": [
         "libs/shared/types/src/index.ts"
+      ],
+      "@ptforum/ui": [
+        "libs/shared/ui/src/index.ts"
+      ],
+      "@ptforum/utils": [
+        "libs/shared/utils/src/index.ts"
       ]
     },
     "composite": true,

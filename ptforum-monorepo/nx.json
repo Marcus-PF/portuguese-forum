@@ -1,7 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "cli": {
-    "defaultCollection": "@nx/workspace",
     "packageManager": "pnpm"
   },
   "defaultBase": "master",
@@ -59,15 +58,6 @@
       }
     },
     {
-      "plugin": "@nx/cypress/plugin",
-      "options": {
-        "targetName": "e2e",
-        "openTargetName": "open-cypress",
-        "componentTestingTargetName": "component-test",
-        "ciTargetName": "e2e-ci"
-      }
-    },
-    {
       "plugin": "@nx/react/router-plugin",
       "options": {
         "buildTargetName": "build",
@@ -112,6 +102,11 @@
       "application": {
         "style": "tailwind",
         "linter": "eslint"
+      }
+    },
+    "@nx/react": {
+      "library": {
+        "unitTestRunner": "vitest"
       }
     }
   },

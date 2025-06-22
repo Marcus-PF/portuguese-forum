@@ -1,0 +1,12 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "src",
+    "outDir": "../../../dist/out-tsc/libs/shared/utils",
+    "tsBuildInfoFile": "../../../dist/out-tsc/libs/shared/utils/tsconfig.tsbuildinfo"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["**/*.spec.ts", "**/*.test.ts", "**/*.js"],
+  "references": []
+}
