@@ -15,7 +15,14 @@
       "options": {
         "port": 3000
       }
+    },
+    "deploy": {
+      "executor": "@nx-extend/docusaurus:deploy",
+      "options": {
+        "outputPath": "dist/apps/docs",
+        "buildTarget": "docs:build"
+      }
     }
   },
-  "tags": []
+  "tags": ["type:app", "scope:docs", "platform:web"]
 }

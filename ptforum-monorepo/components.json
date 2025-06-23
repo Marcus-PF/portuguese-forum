@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "default",
+  "rsc": false,
+  "tailwind": {
+    "config": "libs\\shared\\config\\src\\tailwind\\tailwind.config.ts",
+    "css": "libs\\shared\\ui\\src\\themes\\global.css",
+    "baseColor": "slate",
+    "cssVariables": true
+  },
+  "aliases": {
+    "ui": "@ptforum/ui",
+    "components": "@ptforum/ui/primitives",
+    "utils": "@ptforum/utils",
+    "hooks": "@ptforum/ui/hooks"
+  }
+}

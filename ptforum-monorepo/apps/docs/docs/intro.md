@@ -1,47 +1,83 @@
 ---
+id: intro
+title: Getting Started
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Welcome to the Portuguese Forum Docs
 
-Let's discover **Docusaurus in less than 5 minutes**.
+This documentation site is built with [Docusaurus](https://docusaurus.io) and serves as the **central reference** for developers working in the Portuguese Forum monorepo.
 
-## Getting Started
+> 💡 If you're new here, start with the structure overview, then follow the steps below to preview the docs locally.
 
-Get started by **creating a new site**.
+---
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## 🚀 Quick Start
 
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
+To get your local dev environment running:
 
 ```bash
-npm init docusaurus@latest my-website classic
-```
+cd apps/docs
+pnpm install       # or yarn / npm install
+pnpm start         # or yarn start / npm run start
+````
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+Then open your browser to:
+👉 [`http://localhost:3000`](http://localhost:3000)
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+---
 
-## Start your site
+## 📦 Project Structure
 
-Run the development server:
+This docs app lives inside a modular Nx monorepo.
+
+| Path              | Purpose                                     |
+| ----------------- | ------------------------------------------- |
+| `apps/docs/`      | Docusaurus app (this site)                  |
+| `libs/*/`         | Shared business logic, contracts, utilities |
+| `apps/forum/`     | Frontend app (React + ShadCN)               |
+| `libs/ui/`        | Design system components                    |
+| `libs/contracts/` | Zod schemas + validation for APIs           |
+
+---
+
+## 🛠 Tooling & Requirements
+
+Make sure you have the following installed:
+
+* [Node.js](https://nodejs.org/en/download/) **v20+**
+* [`pnpm`](https://pnpm.io) (preferred) or `yarn` / `npm`
+* [Nx CLI](https://nx.dev) (optional for generators)
 
 ```bash
-cd my-website
-npm run start
+npm install -g nx
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+---
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+## 📖 Editing Documentation
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Edit any `.md` or `.mdx` file in `apps/docs/docs/`:
+
+* This page: `docs/intro.md`
+* New pages: Create `.md(x)` files and register them in `sidebars.ts`
+
+Docusaurus will auto-reload your changes in the browser ✨
+
+---
+
+## 🔗 Useful Commands
+
+```bash
+pnpm nx run docs:serve     # Run locally
+pnpm nx run docs:build     # Static export
+pnpm nx run docs:lint      # Lint markdown / config
+```
+
+---
+
+## 🙋 Need Help?
+
+Reach out in `#dev-docs` on Slack or check the [`@ptforum/docs`](https://github.com/ptforum) package for shared configs and design patterns.
+
+---

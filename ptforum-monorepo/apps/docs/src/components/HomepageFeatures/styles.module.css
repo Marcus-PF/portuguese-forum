@@ -1,11 +1,30 @@
+/**
+ * ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+ * ┃ @ptforum/docs – HomepageFeatures Styles               ┃
+ * ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ * Scoped module CSS for homepage feature cards and layout.
+ * Follows responsive spacing and brand tone.
+ */
+
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  justify-content: center;
+  padding: 4rem 0;
   width: 100%;
 }
 
+/* 🖼 Brand-consistent icon sizing */
 .featureSvg {
   height: 200px;
   width: 200px;
+  margin-bottom: 1rem;
+}
+
+/* 📱 Responsive overrides */
+@media screen and (max-width: 996px) {
+  .features {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
 }

@@ -1,5 +1,5 @@
 import type { User } from '@ptforum/shared/types';
-import { Button } from '@ptforum/ui';
+import { InteractivePanel } from '../components/InteractivePanel';
 
 const user: User = {
   id: 'u1',
@@ -11,21 +11,14 @@ const user: User = {
 
 export default function HomePage() {
   return (
-    <div className="text-center space-y-6">
-      <h1 className="text-5xl font-bold">Tailwind v4 is up and running!</h1>
-      <h2 className="text-5xl font-bold">Hello, {user.name}!</h2>
+    <main className="bg-background flex flex-col items-center justify-center min-h-screen px-4 py-8 text-center space-y-6">
+      <h1 className="text-primary text-5xl font-bold">Tailwind v4 is up and running!</h1>
 
-      {/* Standard Variant */}
-      <Button variant="secondary">Even Better, Click Me!</Button>
+      <InteractivePanel name={user.name} />
 
-      {/* Custom Style via Class */}
-      <Button className="bg-indigo-600 hover:bg-indigo-500 text-white shadow-md">
-        Custom-Styled Button
-      </Button>
-
-      <div className="debug-box">
+      <div className="mt-8 p-4 rounded-md bg-muted text-muted-foreground border border-border">
         ✅ Tailwind utility styles are active and rendering
       </div>
-    </div>
+    </main>
   );
 }

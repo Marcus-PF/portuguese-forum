@@ -1,8 +1,9 @@
 {
-  "label": "PT Forum Monorepo",
-  "position": 2,
+  "label": "Nx Monorepo",
+  "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "This monorepo supports PFSA’s mission to empower its community through civic engagement, events, language education, and digital tools, offering multilingual (English, Portuguese) and accessible features."
+    "title": "Nx Monorepo Overview",
+    "description": "Documentation for the structure, tooling, deployment, and contribution workflow of the @ptforum monorepo"
   }
 }

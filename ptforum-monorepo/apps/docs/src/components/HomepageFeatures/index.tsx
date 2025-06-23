@@ -1,5 +1,15 @@
+/**
+ * ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+ * ┃ @ptforum/docs – HomepageFeatures Component            ┃
+ * ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ * Responsive grid of homepage feature cards.
+ * Each card includes a branded SVG, heading, and description.
+ * Structured to scale or override per project requirements.
+ */
+
+import React, { JSX } from 'react';
 import clsx from 'clsx';
-import Heading from '@theme/Heading';
+import Heading from '@site/src/components/Heading';
 import styles from './styles.module.css';
 
 type FeatureItem = {
@@ -8,6 +18,9 @@ type FeatureItem = {
   description: JSX.Element;
 };
 
+/* ─────────────────────────────────────────────────────────────
+ * 🧩 Feature Definitions – Add/Remove items here
+ * ───────────────────────────────────────────────────────────── */
 const FeatureList: FeatureItem[] = [
   {
     title: 'Easy to Use',
@@ -24,8 +37,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Just
+        move your content into the <code>/docs</code> directory.
       </>
     ),
   },
@@ -34,18 +47,21 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Extend or customize your layout using React. Docusaurus supports full
+        reuse of headers, footers, and theme components.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+/* ─────────────────────────────────────────────────────────────
+ * 🧱 Feature Card Component
+ * ───────────────────────────────────────────────────────────── */
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Svg className={styles.featureSvg} role="img" aria-label={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -55,6 +71,9 @@ function Feature({title, Svg, description}: FeatureItem) {
   );
 }
 
+/* ─────────────────────────────────────────────────────────────
+ * 🏠 HomepageFeatures Section
+ * ───────────────────────────────────────────────────────────── */
 export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>

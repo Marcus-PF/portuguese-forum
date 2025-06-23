@@ -1,30 +1,78 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+ * ┃    @ptforum/docs – Global Theme Overrides (Docusaurus Styling)     ┃
+ * ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ * Central stylesheet for the Portuguese Forum documentation site.
+ * Defines base theme colours, dark mode overrides, and typography.
+ * Colours reflect the Portuguese flag and Forum branding as per
+ * "App Colours & Font.pdf" and design tokens used across the monorepo.
  */
 
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+/* ─────────────────────────────────────────────────────────────
+ * 🎨 Typography – Global Font Declaration
+ * ───────────────────────────────────────────────────────────── */
+
+/**
+ * Enforces the Poppins font family across all content.
+ * - Available in Regular (400), Semibold (600), and Bold (700)
+ */
+html {
+  font-family: 'Poppins', sans-serif;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* ─────────────────────────────────────────────────────────────
+ * 🌞 Light Mode – Base Theme Colours
+ * ───────────────────────────────────────────────────────────── */
+
+/**
+ * Primary colour palette inspired by Portuguese flag (green side).
+ * Used throughout Infima variables for buttons, links, and accents.
+ */
+:root {
+  --ifm-color-primary: #175e20;            /* Forest Green */
+  --ifm-color-primary-dark: #0c3111;       /* Deep Green */
+  --ifm-color-primary-darker: #0b2b0f;
+  --ifm-color-primary-darkest: #081e0a;
+
+  --ifm-color-primary-light: #22913a;
+  --ifm-color-primary-lighter: #4bb24f;
+  --ifm-color-primary-lightest: #7ed46c;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1); /* subtle code line bg */
+}
+
+/* ─────────────────────────────────────────────────────────────
+ * 🌚 Dark Mode – Contrast Adjusted Theme
+ * ───────────────────────────────────────────────────────────── */
+
+/**
+ * Uses Olive Green (#95ba3a) as a primary for better dark theme visibility.
+ * Preserves contrast while keeping brand tone consistent.
+ */
 [data-theme='dark'] {
-  --ifm-color-primary: #95ba3a;
+  --ifm-color-primary: #95ba3a;            /* Olive Green */
   --ifm-color-primary-dark: #86a734;
   --ifm-color-primary-darker: #7f9e31;
   --ifm-color-primary-darkest: #688229;
+
   --ifm-color-primary-light: #a1c647;
   --ifm-color-primary-lighter: #a6c850;
   --ifm-color-primary-lightest: #b4d16c;
+
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* ─────────────────────────────────────────────────────────────
+ * ❤️ Accent Utilities - Red from the Portugal flag
+ * ───────────────────────────────────────────────────────────── */
+
+/**
+ * You may optionally use this for alerts, call-to-actions, or branding highlights.
+ * Not used by default to avoid overwhelming the primary green.
+ */
+
+.button--secondary {
+  background-color: #ff0000; /* Portuguese Red */
+  color: #ffffff;
 }

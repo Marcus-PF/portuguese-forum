@@ -1,0 +1,9 @@
+{
+  "label": "Website",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "title": "@ptforum/forum – Public Website",
+    "description": "Documentation for the official PFSA website, built with Next.js 15, Sanity CMS, and @ptforum libraries. Covers features, routes, CMS integration, language tools, and development roadmap."
+  }
+}

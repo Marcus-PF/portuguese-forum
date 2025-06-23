@@ -1,9 +1,12 @@
 {
   "name": "@ptforum/ui",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/shared/libs/ui/src",
+  "sourceRoot": "libs/shared/ui/src",
   "projectType": "library",
   "targets": {
+    "add-component": {
+      "executor": "@nx-extend/shadcn-ui:add"
+    },
     "build": {
       "executor": "@nx/vite:build",
       "outputs": ["{options.outputPath}"],

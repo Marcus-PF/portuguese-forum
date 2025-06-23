@@ -2,14 +2,35 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@ptforum/shared/types": [
-        "libs/shared/types/src/index.ts"
+      "@ptforum/config/tailwind": [
+        "libs/shared/config/src/tailwind/tailwind.config.ts"
       ],
-      "@ptforum/ui": [
-        "libs/shared/ui/src/index.ts"
+      "@ptforum/config": [
+        "libs/shared/config/src"
+      ],
+      "@ptforum/shared/config": [
+        "libs/shared/config/src/*"
+      ],
+      "@ptforum/types": [
+        "libs/shared/types/src"
+      ],
+      "@ptforum/shared/types": [
+        "libs/shared/types/src/*"
       ],
       "@ptforum/utils": [
-        "libs/shared/utils/src/index.ts"
+        "libs/shared/utils/src"
+      ],
+      "@ptforum/shared/utils": [
+        "libs/shared/utils/src/*"
+      ],
+      "@ptforum/ui": [
+        "libs/shared/ui/src"
+      ],
+      "@ptforum/shared/ui": [
+        "libs/shared/ui/src/*"
+      ],
+      "@ptforum/ui/global.css": [
+        "libs/shared/ui/src/themes/global.css"
       ]
     },
     "composite": true,

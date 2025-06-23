@@ -2,6 +2,9 @@
   "extends": "../../tsconfig.base.json",
   "references": [
     {
+      "path": "../../libs/shared/config"
+    },
+    {
       "path": "../../libs/shared/types"
     },
     {
@@ -16,6 +19,7 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "noEmit": true,
+    "lib": ["DOM", "ESNext"],
     "verbatimModuleSyntax": true,
     "resolveJsonModule": true,
     "allowJs": true,
@@ -37,7 +41,9 @@
     "src/**/*.jsx",
     "src/**/*.ts",
     "src/**/*.tsx",
-    "../../dist/apps/forum/.next/types/**/*.ts"
+    "src/**/*.css",
+    "**/*.ts",
+    "**/*.tsx"
   ],
   "exclude": [
     "node_modules",

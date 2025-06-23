@@ -1,7 +1,13 @@
 ---
-title: Markdown page example
+title: About the Portuguese Forum
 ---
 
-# Markdown page example
+# 🇵🇹 Welcome to the Portuguese Forum Docs
 
-You don't need React to write simple standalone pages.
+This is a standalone Markdown page example built with Docusaurus.
+
+- Built with 💚 by the @ptforum team
+- Styled with Tailwind + CSS Modules
+- Monorepo powered by Nx
+
+[Get started →](/docs/intro)

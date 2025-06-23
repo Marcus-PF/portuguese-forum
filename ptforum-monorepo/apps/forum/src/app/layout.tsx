@@ -1,7 +1,8 @@
 // apps/forum/src/app/layout.tsx
-import './global.css';
+import '@ptforum/ui/global.css';
+import type { Metadata } from 'next';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Portuguese Forum',
   description: 'A community platform for the Portuguese community in South Africa',
 };
@@ -9,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className='bg-secondary'>{children}</body>
     </html>
   );
 }

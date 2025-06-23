@@ -3,7 +3,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 import path from 'path';
 
 export default defineConfig(() => ({
-  root: __dirname, // 👈 Ensure Vite resolves from the correct directory
+  root: __dirname,
   cacheDir: '../../../node_modules/.vite/libs/shared/ui',
   plugins: [
     tsconfigPaths({
@@ -31,7 +31,18 @@ export default defineConfig(() => ({
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ['react', 'react-dom', '@ptforum/utils'],
+      external: [
+        'react',
+        'react-dom',
+        '@ptforum/utils',
+        '@radix-ui/react-slot',
+        'class-variance-authority',
+        'clsx',
+        'lucide-react',
+        'tailwind-merge',
+        'tailwind-variants',
+        'tailwindcss-animate'
+      ],
       output: {
         globals: {
           react: 'React',

@@ -3,18 +3,21 @@
   "compilerOptions": {
     "allowJs": true,
     "esModuleInterop": true,
-    "jsx": "react",
-    "lib": ["DOM"],
+    "jsx": "react-jsx",
+    "lib": ["DOM", "ESNext"],
     "noEmit": true,
     "noImplicitAny": false,
+    "skipLibCheck": true,
     "types": [
       "node",
+      "react",
       "@docusaurus/module-type-aliases",
-      "@docusaurus/theme-classic"
+      "katex"
     ],
     "baseUrl": ".",
     "paths": {
-      "@site/*": ["./*"]
+      "@site/*": ["./*"],
+      "@ptforum/*": ["../../libs/*/src"]
     }
   }
 }
