@@ -1,14 +1,14 @@
 {
-  "name": "@ptforum/config",
-  "root": "libs/shared/config",
-  "sourceRoot": "libs/shared/config/src",
+  "name": "@ptforum/contracts",
+  "root": "libs/shared/contracts",
+  "sourceRoot": "libs/shared/contracts/src",
   "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/shared/config/**/*.ts"]
+        "lintFilePatterns": ["libs/shared/contracts/**/*.ts"]
       }
     },
     "test": {
@@ -18,5 +18,5 @@
       }
     }
   },
-  "tags": ["scope:shared", "type:config"]
+  "tags": ["scope:shared", "type:contracts"]
 }

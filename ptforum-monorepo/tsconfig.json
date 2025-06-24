@@ -22,6 +22,9 @@
     },
     {
       "path": "./libs/shared/hooks"
+    },
+    {
+      "path": "./libs/shared/contracts"
     }
   ]
 }

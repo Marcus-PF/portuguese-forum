@@ -2,29 +2,29 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@ptforum/types": [
-        "libs/shared/types/src"
+      "@ptforum/hooks": [
+        "libs/shared/hooks/src"
       ],
       "@ptforum/shared/types": [
         "libs/shared/types/src/*"
       ],
-      "@ptforum/utils": [
-        "libs/shared/utils/src"
+      "@ptforum/shared/ui": [
+        "libs/shared/ui/src/*"
       ],
       "@ptforum/shared/utils": [
         "libs/shared/utils/src/*"
       ],
+      "@ptforum/types": [
+        "libs/shared/types/src"
+      ],
       "@ptforum/ui": [
         "libs/shared/ui/src"
-      ],
-      "@ptforum/shared/ui": [
-        "libs/shared/ui/src/*"
       ],
       "@ptforum/ui/global.css": [
         "libs/shared/ui/src/themes/global.css"
       ],
-      "@ptforum/hooks": [
-        "libs/shared/hooks/src"
+      "@ptforum/utils": [
+        "libs/shared/utils/src"
       ]
     },
     "composite": true,

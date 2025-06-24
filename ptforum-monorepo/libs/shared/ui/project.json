@@ -29,6 +29,6 @@
       }
     }
   },
-  "implicitDependencies": ["utils"],
+  "implicitDependencies": ["utils", "hooks"],
   "tags": ["scope:shared", "type:ui"]
 }
