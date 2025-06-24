@@ -5,25 +5,25 @@ import { Slot } from "@radix-ui/react-slot"
 import { cva, VariantProps } from "class-variance-authority"
 import { PanelLeftIcon } from "lucide-react"
 
-import { useIsMobile } from "@ptforum/ui/hooks/use-mobile"
-import { cn } from "@ptforum/ui/primitives/lib/utils"
-import { Button } from "@ptforum/ui/button"
-import { Input } from "@ptforum/ui/input"
-import { Separator } from "@ptforum/ui/separator"
+import { useIsMobile } from "@ptforum/hooks"
+import { cn } from "@ptforum/utils"
+import { Button } from "./button"
+import { Input } from "./input"
+import { Separator } from "./separator"
 import {
   Sheet,
   SheetContent,
   SheetDescription,
   SheetHeader,
   SheetTitle,
-} from "@ptforum/ui/sheet"
-import { Skeleton } from "@ptforum/ui/skeleton"
+} from "./sheet"
+import { Skeleton } from "./skeleton"
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@ptforum/ui/tooltip"
+} from "./tooltip"
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state"
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7

@@ -3,8 +3,8 @@
   "compilerOptions": {
     "composite": true,
     "rootDir": "src",
-    "outDir": "../../../dist/out-tsc/libs/shared/ui",
-    "tsBuildInfoFile": "../../../dist/out-tsc/libs/shared/ui/tsconfig.tsbuildinfo",
+    "outDir": "../../../dist/out-tsc/libs/shared/hooks",
+    "tsBuildInfoFile": "../../../dist/out-tsc/libs/shared/hooks/tsconfig.tsbuildinfo",
     "jsx": "react-jsx",
     "lib": ["DOM", "ESNext"],
     "types": [],
@@ -13,8 +13,5 @@
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.css"],
   "exclude": ["**/*.spec.ts", "**/*.test.ts", "**/*.js", "node_modules", "dist"],
-  "references": [
-    { "path": "../utils" },
-    { "path": "../hooks" }
-  ]
+  "references": []
 }

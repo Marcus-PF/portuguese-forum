@@ -2,15 +2,6 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@ptforum/config/tailwind": [
-        "libs/shared/config/src/tailwind/tailwind.config.ts"
-      ],
-      "@ptforum/config": [
-        "libs/shared/config/src"
-      ],
-      "@ptforum/shared/config": [
-        "libs/shared/config/src/*"
-      ],
       "@ptforum/types": [
         "libs/shared/types/src"
       ],
@@ -31,6 +22,9 @@
       ],
       "@ptforum/ui/global.css": [
         "libs/shared/ui/src/themes/global.css"
+      ],
+      "@ptforum/hooks": [
+        "libs/shared/hooks/src"
       ]
     },
     "composite": true,

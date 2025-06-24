@@ -128,6 +128,9 @@ importers:
       lucide-react:
         specifier: ^0.518.0
         version: 0.518.0(react@19.1.0)
+      next:
+        specifier: ^15.3.4
+        version: 15.3.4(@babel/core@7.27.4)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.89.2)
       next-themes:
         specifier: ^0.4.6
         version: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -456,6 +459,9 @@ importers:
       lucide-react:
         specifier: ^0.518.0
         version: 0.518.0(react@19.1.0)
+      next:
+        specifier: ^15.3.4
+        version: 15.3.4(@babel/core@7.27.4)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.89.2)
       next-themes:
         specifier: ^0.4.6
         version: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -498,6 +504,8 @@ importers:
       zod:
         specifier: ^3.25.67
         version: 3.25.67
+
+  libs/shared/hooks: {}
 
 packages:
 

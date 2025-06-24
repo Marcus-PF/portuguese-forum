@@ -1,4 +1,4 @@
-import type { User } from '@ptforum/shared/types';
+import type { User } from '@ptforum/types';
 import { InteractivePanel } from '../components/InteractivePanel';
 
 const user: User = {

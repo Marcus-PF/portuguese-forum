@@ -19,6 +19,9 @@
     },
     {
       "path": "./libs/shared/ui"
+    },
+    {
+      "path": "./libs/shared/hooks"
     }
   ]
 }
