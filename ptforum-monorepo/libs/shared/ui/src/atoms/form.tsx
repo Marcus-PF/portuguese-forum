@@ -12,7 +12,7 @@ import {
 } from "react-hook-form"
 
 import { cn } from "@ptforum/utils"
-import { Label } from "@ptforum/ui/label"
+import { Label } from "./label"
 
 const Form = FormProvider
 
