@@ -1,12 +1,6 @@
 /**
  * ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
- * ┃        @ptforum/utils – Shared Utilities Index        ┃
+ * ┃         @ptforum/utils – API Exports Barrel           ┃
  * ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
- * Centralized export of all utility submodules for the PFSA monorepo.
  */
-
-export * from './classnames';
-export * from './date';
-export * from './string';
-export * from './error';
-export * from './api';
+export * from './response';

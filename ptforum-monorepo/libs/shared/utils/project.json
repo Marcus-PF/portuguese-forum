@@ -4,14 +4,6 @@
   "sourceRoot": "libs/shared/utils/src",
   "projectType": "library",
   "targets": {
-    "build": {
-      "executor": "@nx/vite:build",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "configFile": "libs/shared/utils/vite.config.ts",
-        "outputPath": "dist/libs/shared/utils"
-      }
-    },
     "lint": {
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],

@@ -3,18 +3,15 @@
   "compilerOptions": {
     "composite": true,
     "rootDir": "src",
-    "outDir": "../../../dist/out-tsc/libs/shared/utils",
-    "tsBuildInfoFile": "../../../dist/out-tsc/libs/shared/utils/tsconfig.tsbuildinfo",
-    "types": [
-      "node",
-      "@nx/react/typings/cssmodule.d.ts",
-      "@nx/react/typings/image.d.ts"
-    ],
-    "jsx": "react-jsx",
-    "module": "esnext",
-    "moduleResolution": "bundler",
+    "outDir": "../../../dist/out-tsc/libs/shared/utils/*"
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "**/*.ts", "**/*.tsx"],
-  "exclude": ["**/*.spec.ts", "**/*.test.ts", "**/*.js", "node_modules", "dist"],
-  "references": []
+  "include": ["src/**/*.ts"],
+  "exclude": [
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/*.js"
+  ],
+  "references": [
+    { "path": "../types" },
+]
 }
