@@ -28,6 +28,9 @@
     },
     {
       "path": "./libs/shared/env"
+    },
+    {
+      "path": "./libs/shared/logger"
     }
   ]
 }

@@ -42,7 +42,8 @@
       "exclude": [
         "shared/*",
         "libs/shared/contracts/*",
-        "libs/shared/env/*"
+        "libs/shared/env/*",
+        "libs/shared/logger/*"
       ]
     },
     {
@@ -92,7 +93,8 @@
       "include": [
         "shared/*",
         "libs/shared/contracts/*",
-        "libs/shared/env/*"
+        "libs/shared/env/*",
+        "libs/shared/logger/*"
       ],
       "options": {
         "typecheck": {

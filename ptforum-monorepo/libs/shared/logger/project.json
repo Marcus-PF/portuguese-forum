@@ -1,0 +1,22 @@
+{
+  "name": "@ptforum/logger",
+  "root": "libs/shared/logger",
+  "sourceRoot": "libs/shared/logger/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/logger/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "options": {
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["scope:shared", "type:logger"]
+}

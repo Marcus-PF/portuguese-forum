@@ -25,7 +25,13 @@
       ],
       "@ptforum/utils": [
         "libs/shared/utils/src"
-      ]
+      ],
+      "@ptforum/env": [
+        "libs/shared/env/src"
+      ],
+      "@ptforum/shared/env": [
+        "libs/shared/env/src/*"
+      ],
     },
     "composite": true,
     "declarationMap": true,
