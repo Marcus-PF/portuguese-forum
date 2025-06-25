@@ -505,7 +505,7 @@ importers:
         specifier: ^3.25.67
         version: 3.25.67
 
-  libs/shared/contracts: {}
+  libs/shared/env: {}
 
 packages:
 

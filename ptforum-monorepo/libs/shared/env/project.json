@@ -1,0 +1,22 @@
+{
+  "name": "@ptforum/env",
+  "root": "libs/shared/env",
+  "sourceRoot": "libs/shared/env/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/env/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "options": {
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["scope:shared", "type:utility"]
+}

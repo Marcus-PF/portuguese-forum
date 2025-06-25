@@ -25,6 +25,9 @@
     },
     {
       "path": "./libs/shared/contracts"
+    },
+    {
+      "path": "./libs/shared/env"
     }
   ]
 }
