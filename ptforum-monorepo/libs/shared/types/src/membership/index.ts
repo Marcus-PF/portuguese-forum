@@ -1,11 +1,9 @@
 /**
  * ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
- * ┃             @ptforum/types – ClubId Type              ┃
+ * ┃        @ptforum/types – Membership Types Index        ┃
  * ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
- * Nominal type for club entities. Enables safe composition
- * in Club, Membership, and Event models.
+ * Barrel re-exports for the `Membership` model and tier
+ * enum used across billing, dashboards, and access checks.
  */
 
-import type { Branded } from './brand';
-
-export type ClubId = Branded<string, 'ClubId'>;
+export * from './membership';

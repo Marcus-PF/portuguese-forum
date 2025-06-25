@@ -1,11 +1,9 @@
 /**
  * ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
- * ┃             @ptforum/types – ClubId Type              ┃
+ * ┃           @ptforum/types – Event Types Index          ┃
  * ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
- * Nominal type for club entities. Enables safe composition
- * in Club, Membership, and Event models.
+ * Barrel re-export for the core `Event` model, used for
+ * calendar rendering, scheduling, and user dashboards.
  */
 
-import type { Branded } from './brand';
-
-export type ClubId = Branded<string, 'ClubId'>;
+export * from './event';

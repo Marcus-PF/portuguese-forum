@@ -1,11 +1,10 @@
 /**
  * ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
- * ┃             @ptforum/types – ClubId Type              ┃
+ * ┃           @ptforum/types – Post Types Index           ┃
  * ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
- * Nominal type for club entities. Enables safe composition
- * in Club, Membership, and Event models.
+ * Barrel re-exports for all post-related types including
+ * the main Post model and its status enum literals.
  */
 
-import type { Branded } from './brand';
-
-export type ClubId = Branded<string, 'ClubId'>;
+export * from './status';
+export * from './post';

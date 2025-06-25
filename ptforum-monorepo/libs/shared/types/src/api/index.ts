@@ -1,11 +1,12 @@
 /**
  * ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
- * ┃             @ptforum/types – ClubId Type              ┃
+ * ┃         @ptforum/types – API DTOs Index               ┃
  * ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
- * Nominal type for club entities. Enables safe composition
- * in Club, Membership, and Event models.
+ * Barrel re-exports for all public-facing API response
+ * shapes (DTOs). Used in REST/GraphQL responses and
+ * frontend hydration.
  */
 
-import type { Branded } from './brand';
-
-export type ClubId = Branded<string, 'ClubId'>;
+export * from './user-public.dto';
+export * from './post-public.dto';
+export * from './event-public.dto';

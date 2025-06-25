@@ -1,33 +1,25 @@
 /**
  * ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
- * ┃          @ptforum/types – Membership Model            ┃
+ * ┃        @ptforum/types – Brand Primitives Index        ┃
  * ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
- * Represents a user’s membership status in the Portuguese
- * Forum of South Africa. Includes tier, activation state,
- * and associated timestamps.
+ * Barrel re-exports for the Branded<T, Tag> utility and
+ * all nominal ID primitives. Import from here to guarantee
+ * consistent, type-safe identifiers across the monorepo.
  */
 
-import type { MembershipId, UserId } from '../brand';
-import type { WithId, Timestamped } from '../common';
+/* ─────────────────────────────────────────────────────────────
+ * 🛠  Branded Type Utility
+ * ───────────────────────────────────────────────────────────── */
+export * from './brand';
 
 /* ─────────────────────────────────────────────────────────────
- * 🏷️ Membership Tier Enum
+ * 🔑  Entity ID Primitives
  * ───────────────────────────────────────────────────────────── */
-export const MembershipTiers = ['STANDARD', 'PREMIUM', 'STUDENT', 'YOUTH'] as const;
-
-/**
- * Union type of valid membership tiers.
- */
-export type MembershipTier = (typeof MembershipTiers)[number];
-
-/* ─────────────────────────────────────────────────────────────
- * 🧩 Membership Model
- * ───────────────────────────────────────────────────────────── */
-export interface Membership extends WithId<MembershipId>, Timestamped {
-  /** The user who holds this membership */
-  userId: UserId;
-  /** Membership tier classification */
-  tier: MembershipTier;
-  /** Whether the membership is currently active */
-  active: boolean;
-}
+export * from './user-id';
+export * from './post-id';
+export * from './comment-id';
+export * from './tag-id';
+export * from './club-id';
+export * from './event-id';
+export * from './alert-id';
+export * from './membership-id';

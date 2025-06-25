@@ -1,11 +1,9 @@
 /**
  * ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
- * ┃             @ptforum/types – ClubId Type              ┃
+ * ┃         @ptforum/types – Comment Types Index          ┃
  * ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
- * Nominal type for club entities. Enables safe composition
- * in Club, Membership, and Event models.
+ * Barrel re-export for the Comment model used across
+ * post detail views, moderation, and notifications.
  */
 
-import type { Branded } from './brand';
-
-export type ClubId = Branded<string, 'ClubId'>;
+export * from './comment';
