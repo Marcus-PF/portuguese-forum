@@ -3,7 +3,7 @@
   "compilerOptions": {
     "composite": true,
     "rootDir": "src",
-    "outDir": "../../../dist/out-tsc/libs/shared/contracts"
+    "outDir": "../../../dist/out-tsc/libs/shared/contracts/*"
   },
   "include": ["src/**/*.ts"],
   "exclude": [
@@ -11,5 +11,7 @@
     "**/*.test.ts",
     "**/*.js"
   ],
-  "references": []
+  "references": [
+    { "path": "../types" },
+  ]
 }
