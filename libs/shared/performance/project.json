@@ -1,0 +1,9 @@
+{
+  "name": "performance",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/performance/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project performance --web",
+  "targets": {}
+}

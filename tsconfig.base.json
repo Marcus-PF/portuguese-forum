@@ -1,0 +1,43 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@pfsa/api-client": ["libs/shared/api-client/src/index.ts"],
+      "@pfsa/auth": ["libs/shared/auth/src/index.ts"],
+      "@pfsa/contracts": ["libs/shared/contracts/src/index.ts"],
+      "@pfsa/dash-features": ["libs/dash/features/src/index.ts"],
+      "@pfsa/domain": ["libs/dash/domain/src/index.ts"],
+      "@pfsa/env": ["libs/shared/env/src/index.ts"],
+      "@pfsa/errors": ["libs/shared/errors/src/index.ts"],
+      "@pfsa/forms": ["libs/shared/forms/src/index.ts"],
+      "@pfsa/hooks": ["libs/shared/hooks/src/index.ts"],
+      "@pfsa/i18n": ["libs/shared/i18n/src/index.ts"],
+      "@pfsa/logger": ["libs/shared/logger/src/index.ts"],
+      "@pfsa/metrics": ["libs/shared/metrics/src/index.ts"],
+      "@pfsa/mocks": ["libs/shared/mocks/src/index.ts"],
+      "@pfsa/performance": ["libs/shared/performance/src/index.ts"],
+      "@pfsa/security": ["libs/shared/security/src/index.ts"],
+      "@pfsa/state": ["libs/shared/state/src/index.ts"],
+      "@pfsa/types": ["libs/shared/types/src/index.ts"],
+      "@pfsa/ui": ["libs/shared/ui/src/index.ts"],
+      "@pfsa/utils": ["libs/shared/utils/src/index.ts"],
+      "@pfsa/web-domain": ["libs/web/domain/src/index.ts"],
+      "@pfsa/web-features": ["libs/web/features/src/index.ts"],
+      "@pfsa/websocket": ["libs/shared/websocket/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
