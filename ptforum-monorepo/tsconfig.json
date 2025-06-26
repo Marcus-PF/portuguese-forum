@@ -9,9 +9,6 @@
       "path": "./apps/api"
     },
     {
-      "path": "./libs/shared/config"
-    },
-    {
       "path": "./libs/shared/types"
     },
     {
@@ -31,6 +28,9 @@
     },
     {
       "path": "./libs/shared/logger"
+    },
+    {
+      "path": "./libs/shared/metrics"
     }
   ]
 }

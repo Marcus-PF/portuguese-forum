@@ -13,6 +13,19 @@ export const browserEnvSchema = z.object({
     .string()
     .optional()
     .describe('Analytics provider ID'),
+  NEXT_PUBLIC_ANALYTICS_PROVIDER: z.enum(['plausible', 'console', 'posthog']).optional(),
+  NEXT_PUBLIC_ANALYTICS_DOMAIN: z
+    .string()
+    .min(1)
+    .describe('Domain for Plausible or other analytics'),
+  POSTHOG_API_KEY: z
+    .string()
+    .optional()
+    .describe('PostHog project API key (if enabled)'),
+  POSTHOG_HOST: z
+    .string()
+    .optional()
+    .describe('PostHog instance host (default: https://app.posthog.com)'),
 });
 
 export type BrowserEnv = z.infer<typeof browserEnvSchema>;

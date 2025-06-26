@@ -1,0 +1,22 @@
+{
+  "name": "@ptforum/metrics",
+  "root": "libs/shared/metrics",
+  "sourceRoot": "libs/shared/metrics/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/metrics/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "options": {
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["scope:shared", "type:metrics"]
+}

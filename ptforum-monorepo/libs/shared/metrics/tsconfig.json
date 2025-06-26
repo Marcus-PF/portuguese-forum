@@ -1,0 +1,20 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "jsx": "react-jsx",
+    "lib": ["DOM", "ESNext"],
+    "types": [],
+    "esModuleInterop": true,
+    "moduleResolution": "nodenext",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.css"],
+  "exclude": ["**/*.spec.ts", "**/*.test.ts", "**/*.js", "node_modules", "dist"],
+  "references": [
+    { "path": "../types" },
+    { "path": "../env" },
+    { "path": "../logger" }
+  ]
+}

@@ -43,7 +43,8 @@
         "shared/*",
         "libs/shared/contracts/*",
         "libs/shared/env/*",
-        "libs/shared/logger/*"
+        "libs/shared/logger/*",
+        "libs/shared/metrics/*"
       ]
     },
     {
@@ -94,7 +95,8 @@
         "shared/*",
         "libs/shared/contracts/*",
         "libs/shared/env/*",
-        "libs/shared/logger/*"
+        "libs/shared/logger/*",
+        "libs/shared/metrics/*"
       ],
       "options": {
         "typecheck": {
